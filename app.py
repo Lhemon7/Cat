@@ -2,7 +2,7 @@ from flask import Flask, request
 import requests
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='assets', static_url_path='/assets')  # <-- ADD THIS
 
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
