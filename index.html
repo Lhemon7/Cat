@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from erp.htu.edu.gh/staffportal/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Jun 2026 00:56:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>HTU - Login</title>
+	<!-- Favicon-->
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<!-- Plugins Core Css -->
+	<link href="assets/css/app.min.css" rel="stylesheet">
+	<!-- Custom Css -->
+	<link href="assets/css/style.css" rel="stylesheet" />
+	<link href="assets/css/pages/extra_pages.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<form class="login100-form validate-form" method="POST">
+				<h4 style="color: blue;" class="text-center"><strong>HO TECHNICAL UNIVERSITY - STAFF PORTAL</strong></h4>
+				<span class="login100-form-title p-b-45">
+					<img src="assets/images/logo.png" height="100" width="100"><br /><br />
+					<h4>Login to start your session</h4>
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Staff ID is required">
+					<input class="input100" type="text" name="staff_id" id="staff_id">
+					<span class="focus-input100"></span>
+					<span class="label-input100">Staff ID / Email</span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Password is required">
+					<input class="input100" type="password" name="password">
+					<span class="focus-input100"></span>
+					<span class="label-input100">Password</span>
+				</div>
+
+				<!-- <div class="flex-sb-m w-full p-t-15 p-b-20">
+					<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" value=""> Remember me
+							<span class="form-check-sign">
+								<span class="check"></span>
+							</span>
+						</label>
+					</div>
+				</div> -->
+
+
+				<div class="container-login100-form-btn">
+					<button class="login100-form-btn" type="submit" name="login">
+						Login
+					</button>
+				</div>
+
+				<br>
+				<p class="text-center">OR</p>
+				<div align="center"><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;access_type=online&amp;client_id=872907740363-5imh98bb8hukij7gejfkhtjq72aub96c.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Ferp.htu.edu.gh%2Fstaffportal%2Flogin&amp;state&amp;scope=email%20profile&amp;approval_prompt=auto"><img src="assets/images/sign-in-with-google.png" height="50" width="300" /></a></div>
+				<div align="center">
+					<br>
+					<button data-toggle="modal" data-target="#exampleModal" type="button" class="txt1 btn btn-danger btn-lg">
+						Forgot Password?
+					</button>
+				</div>
+
+			</form>
+
+			<!-- <div class="login100-more">
+					<div class="card">
+						<div class="header">
+							<h1 style="color: blue;"><strong>HO TECHNICAL UNIVERSITY - STAFF PORTAL</strong></h1>
+						</div>
+						<div class="body">
+							<div class="owl-carousel owl-theme" id="single_slide_autoplay">
+								<div class="item">
+									<img src="assets/images/image-gallery/pic2.jpg" alt="">
+								</div>
+								<div class="item">
+									<img src="assets/images/image-gallery/pic6.jpg" alt="">
+								</div>
+								<div class="item">
+									<img src="assets/images/image-gallery/pic1.png" alt="">
+								</div>
+								<div class="item">
+									<img src="assets/images/image-gallery/pic4.jpg" alt="">
+								</div>
+								<div class="item">
+									<img src="assets/images/image-gallery/pic1.jpg" alt="">
+								</div>
+								<div class="item">
+									<img src="assets/images/image-gallery/pic3.jpg" alt="">
+								</div>
+								<div class="item">
+									<img src="assets/images/image-gallery/pic5.jpg" alt="">
+								</div>
+								<div class="item">
+									<img src="assets/images/image-gallery/pic7.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+
+			<!-- Reset Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<form method="POST">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Reset Password</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<label class="control-label" for="staff_id">Enter your staff ID / Email</label>
+								<input type="text" class="form-control" name="staff_id" id="staff_id" />
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="submit" name="do_reset" class="btn btn-primary">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- Verify Modal -->
+			<div class="modal fade" id="verifyModal" tabindex="-1" role="dialog" aria-labelledby="verifyModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<form method="POST">
+							<div class="modal-header">
+								<h5 class="modal-title" id="verifyModalLabel">Reset Password</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<label class="control-label">A token has been sent to your email and phone number. Please use the token to reset your password.</label>
+								<br><br>
+								<div class="row">
+									<label class="control-label" for="token">Enter verification token</label>
+									<input type="text" class="form-control" name="token" id="token" />
+								</div>
+
+								<div class="row">
+									<label class="control-label" for="password1">Enter new password</label>
+									<input type="password" class="form-control" name="password1" id="password1" />
+								</div>
+
+								<div class="row">
+									<label class="control-label" for="password2">Repeat password</label>
+									<input type="password" class="form-control" name="password2" id="password2" />
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="submit" name="do_verify" class="btn btn-primary">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Plugins Js -->
+	<script src="assets/js/app.min.js"></script>
+	<!-- Extra page Js -->
+	<script src="assets/js/pages/examples/pages.js"></script>
+
+	<script src="assets/js/pages/medias/carousel.js"></script>
+
+	<script src="assets/js/sweetalert.min.js"></script>
+
+	<script type="text/javascript">
+		function reset_password() {
+			var staff_id = document.getElementById('staff_id').value;
+			if (staff_id == '') {
+				swal('Please enter your staff id to proceed.')
+					.then((value) => {
+						location.href = 'index-2.html';
+					});
+			} else {
+				$.ajax({
+					type: 'POST',
+					data: 'staff_id=' + staff_id,
+					url: 'send_reset.php',
+					success: function(msg) {
+						if (msg == 1) {
+							swal('A token has been sent to your email. Please use the token to reset your password.')
+								.then((value) => {
+									location.href = 'reset_password5445.html?id=' + staff_id;
+								});
+						} else {
+							swal('Sorry. An error occured. Please check and try again.')
+								.then((value) => {
+									location.href = 'index-2.html';
+								});
+						}
+					}
+				});
+			}
+		}
+	</script>
+
+	
+	</body>
+
+
+<!-- Mirrored from erp.htu.edu.gh/staffportal/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Jun 2026 00:56:26 GMT -->
+</html>
